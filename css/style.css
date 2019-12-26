@@ -1,0 +1,367 @@
+​* {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 40px 100px;
+  background-color: rgb(41, 41, 41);
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  
+}
+
+
+
+
+.container{
+  display: flex;
+
+}
+
+button{
+  text-align: center;
+  height: 60px;
+  width: 200px;
+  font-size: 30px;
+  margin: 0 auto;
+  position: absolute;
+  left: 45.5%;
+  bottom: 20%;
+ font-family: 'Press Start 2P', cursive;
+}
+
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+
+h5{ 
+  /* font: bold 100% Consolas, Monaco, monospace; */
+  font-size: 40px;
+  text-align: center;
+	border-right: .1em solid black;
+	width: 6.5em; 
+	width: 25ch;
+	margin: 1.5em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-animation: typing 7s steps(21, end),
+	           blink-caret .5s step-end infinite alternate;
+}
+
+
+
+div.endMessage, div.startMessage {
+  color: #73fdb6;
+  background-color: rgba(199, 168, 252, 0.856);
+  height: 700px;
+  width: 3000px;
+  font-size: 60px;
+  border-radius: 40px;
+  border-color: coral;
+}
+
+/* .reset .start {
+    position: absolute;
+    left: 65.5%;
+    top: 70%;
+} */
+
+h1{
+  text-align: center;
+  font-size: 90px;
+}
+
+h4{
+  text-decoration: underline;
+}
+
+h2 h4{
+  text-align: center;
+}
+p{
+  text-align: center;
+  font-size: 15px;
+  margin-right: 20px;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 300px;
+  width: 800px;
+  height: 600px;
+  border: 1px black;
+}
+
+.grid div {
+  width: calc(100% / 9);
+  height: calc(100% / 9);
+  border: 0.05px solid rgb(41, 41, 41, 0.1) ;
+
+}
+
+.infoBox{
+  color: #73fdb6;
+  position: absolute;
+  left: 22.5%;
+  bottom: 12%;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+
+
+.water{
+background-image: url("http://musicments.com/img/d_default/seamless-water-texture-animation/seamless-water-texture-animation-flowing-5c74516580da9.gif");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition-timing-function: ease;
+  animation-name: drive;
+
+}
+
+.lilypad{
+  background-color: green;
+  border-radius: 45px;
+}
+
+.road{
+  background-color: rgba(195, 82, 82, 0.24);
+  
+}
+
+.car{
+  background-image: url(../img/car.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition-timing-function: ease;
+  animation-name: drive;
+}
+
+.frog{
+  background-image: url(../img/frog.gif) !important;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition-timing-function: ease;
+  animation-name: drive;
+}
+
+.log{
+  background-image: url(../img/wood.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition-timing-function: ease;
+  animation-name: drive;
+}
+
+div.water.log{
+  background-image: url(../img/woodnwater.gif);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition-timing-function: ease;
+  animation-name: drive;
+
+}
+ .water.log.frog{
+  background-image: url(../img/woodwaternfrog.gif) !important;
+}
+
+
+@keyframes drive {
+  transform: translate(-62px,62px);
+  transition-timing-function: linear;
+  -webkit-transform: translate(-62px,0); /** Safari & Chrome **/
+  -o-transform: translate(-62px,0); /** Opera **/
+  -moz-transform: translate(-62px,0); /** Firefox **/
+} 
+
+.hidden {
+  display: none!important;
+}​* {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 40px 100px;
+  background-color: rgb(41, 41, 41);
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  
+}
+
+
+
+
+.container{
+  display: flex;
+
+}
+
+button{
+  text-align: center;
+  height: 60px;
+  width: 200px;
+  font-size: 30px;
+  margin: 0 auto;
+  position: absolute;
+  left: 45.5%;
+  bottom: 20%;
+ font-family: 'Press Start 2P', cursive;
+}
+
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+
+h5{ 
+  /* font: bold 100% Consolas, Monaco, monospace; */
+  font-size: 40px;
+  text-align: center;
+	border-right: .1em solid black;
+	width: 6.5em; 
+	width: 25ch;
+	margin: 1.5em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-animation: typing 7s steps(21, end),
+	           blink-caret .5s step-end infinite alternate;
+}
+
+
+
+div.endMessage, div.startMessage {
+  color: #73fdb6;
+  background-color: rgba(199, 168, 252, 0.856);
+  height: 700px;
+  width: 3000px;
+  font-size: 60px;
+  border-radius: 40px;
+  border-color: coral;
+}
+
+/* .reset .start {
+    position: absolute;
+    left: 65.5%;
+    top: 70%;
+} */
+
+h1{
+  text-align: center;
+  font-size: 90px;
+}
+
+h4{
+  text-decoration: underline;
+}
+
+h2 h4{
+  text-align: center;
+}
+p{
+  text-align: center;
+  font-size: 15px;
+  margin-right: 20px;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 300px;
+  width: 800px;
+  height: 600px;
+  border: 1px black;
+}
+
+.grid div {
+  width: calc(100% / 9);
+  height: calc(100% / 9);
+  border: 0.05px solid rgb(41, 41, 41, 0.1) ;
+
+}
+
+.infoBox{
+  color: #73fdb6;
+  position: absolute;
+  left: 22.5%;
+  bottom: 12%;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+
+
+.water{
+background-image: url("http://musicments.com/img/d_default/seamless-water-texture-animation/seamless-water-texture-animation-flowing-5c74516580da9.gif");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition-timing-function: ease;
+  animation-name: drive;
+
+}
+
+.lilypad{
+  background-color: green;
+  border-radius: 45px;
+}
+
+.road{
+  background-color: rgba(195, 82, 82, 0.24);
+  
+}
+
+.car{
+  background-image: url(../img/car.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition-timing-function: ease;
+  animation-name: drive;
+}
+
+.frog{
+  background-image: url(../img/frog.gif) !important;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition-timing-function: ease;
+  animation-name: drive;
+}
+
+.log{
+  background-image: url(../img/wood.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition-timing-function: ease;
+  animation-name: drive;
+}
+
+div.water.log{
+  background-image: url(../img/woodnwater.gif);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition-timing-function: ease;
+  animation-name: drive;
+
+}
+ .water.log.frog{
+  background-image: url(../img/woodwaternfrog.gif) !important;
+}
+
+
+@keyframes drive {
+  transform: translate(-62px,62px);
+  transition-timing-function: linear;
+  -webkit-transform: translate(-62px,0); /** Safari & Chrome **/
+  -o-transform: translate(-62px,0); /** Opera **/
+  -moz-transform: translate(-62px,0); /** Firefox **/
+} 
+
+.hidden {
+  display: none!important;
+}
