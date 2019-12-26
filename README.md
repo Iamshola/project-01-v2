@@ -51,76 +51,31 @@ This project was completed as a extra task based on my previous rendition of thi
 ### Wins and Blockers
 
 ##### Wins
-For my first solo project, I am quite proud of what I have managed to produce yet I know there's a lot more work required to make it the perfect game. I have a better understanding how to think like a developer and with more exposure and practice, I know it will make my code and workflow more efficient
-
-One win which I really like was my character ability to change depending on the veg collected which I used data-type attribute.
-
-This is the approach that I decided to use in order to detect collision. Each of the obstacles would be assigned an index value which would be compared against the characters position. Once collision is detected, the characters would be placed back into the 'safe zone'.
+Compared to my first edition of this game. I am truly proud. Although my code is completely concise, it is defintely more elegant than last time 
 
 ``` js
-function collision(){
-  if(characterPosition === collisionCheckFirstRow ||
-    characterPosition === collisionCheckSecondRow || characterPosition === collisionCheckThirdRow
-    || characterPosition === collisionCheckFourthRow ||
-    characterPosition === collisionCheckFifthRow||
-     characterPosition === collisionCheckSixthRow){
-    squares[currentIndex].classList.remove(sarah)
-    currentIndex = 56
-    audio.play()
-    if(sarah === 'sarahWithVegetables'){
-      getGoals()
+  function collision() {
+    if (cells[currentIndex].classList.contains('car') ||
+      (cells[currentIndex].classList.contains('water') && !cells[currentIndex].classList.contains('log'))) {
+      lives--
+      livesLeft.textContent = lives
+      endGame()
+      cells[currentIndex].classList.remove('frog')
+      currentIndex = 59
+      cells[currentIndex].classList.add('frog')
     }
-    sarah = 'sarah'
-    return squares[currentIndex].classList.add(sarah)
-  } if (vegIndex === characterPosition){
-    squares[currentIndex].classList.remove(sarah)
-    sarah = 'sarahWithVegetables'
-    squares[currentIndex].classList.remove('vegetable')
-    squares[currentIndex].classList.add('sarahWithVegetables')
-    squares[currentIndex].setAttribute('data-type', sarahWithVegetables)
   }
-}
-```
-
-This is the method that I used to generate new versions of my character and to apply the new class to the plate ('lilypads').
-
-``` js
-function sarahOnPlate(){
-  if(squares[currentIndex].classList.contains('home') && squares[currentIndex].classList.contains('sarahWithVegetables')) {
-    squares[currentIndex].classList.remove('home')
-    squares[currentIndex].classList.remove('vegetable')
-    squares[currentIndex].classList.remove('sarahWithVegetables')
-    squares[currentIndex].classList.add('homeWithGem')
-    squares[currentIndex].setAttribute('data-type', homeWithGem)
-    gameChallenge()
-    if(home === 'homeWithGem'){
-      squares[currentIndex].classList.remove('sarahWithVegetables')
-    }
-    sarahNewPoistion()
-    getGoals()
-    currentIndex = 57
-    sarah = 'sarah'
-    squares[currentIndex].classList.remove('vegetable')
-    squares[currentIndex].classList.add('sarah')
-  } else if (squares[currentIndex].classList.contains('home') && !squares[currentIndex].classList.contains('sarahWithVegetables')) {
-    squares[currentIndex].classList.remove('sarah')
-    currentIndex = 59
-    squares[currentIndex].classList.add('sarah')
-  }
-}
-
 ```
 
 ##### Blockers
-On reflection, I wish I had planned better my days and clearly outlined my objectives.
-I had hoped to have more time to refactor my code and make it understandable to others reading it. From speaking to my peers and instructors, I feel it would have been suitable for me to have broken my functions into little function so they can be used in different places to prevent repeat code.
+I had hoped to have more time to refactor my code and make it understandable to others reading it. It would have been ideal if I just one function for my log movement rather than multiple functions.
 
 
 #### Future features
-Prior to selecting this game, I knew it would be a challenge so I decided to ensure that I had a basic MVP and would go back and make any amendments required. I would have loved to have a working log function, the ability to record high score and include multiple levels.
+I would love to expand on this game and create multiple levels.
 
 #### What you have learned
-I have learned the best ways to understand concepts is through practice. I believe I have a good understanding of the theory but will definitely need more practice to understand the best approach to complete projects in future.  I feel this week has made more comfortable but not perfect with JavaScript particularly.
+I have learned the practice is the best way to consolidate my knowledge. Through using things like codewars and ediabit I have become much more comfortable as a javascript developer. 
 
 
 ### Course Curriculum
