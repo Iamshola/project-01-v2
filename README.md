@@ -1,6 +1,6 @@
 ![ga_cog_large_red_rgb](https://cloud.githubusercontent.com/assets/40461/8183776/469f976e-1432-11e5-8199-6ac91363302b.png)
 # Project 1 v2: Game - Frogger
-###### Play Game [Here](https://github.com/Iamshola/project-01-v2)
+###### Play Game [Here](https://iamshola.github.io/project-01-v2/)
 
 ### Brief
 * The idea of Frogger is to guide a family of frogs across a road, and a river to their homes at the top of the screen.
@@ -42,10 +42,7 @@ This project was completed as a extra task based on my previous rendition of thi
 
 ### Preview of game
 
-![Screenshot 2019-07-19 at 10 43 21](https://user-images.githubusercontent.com/43203736/61526285-0e720f00-aa12-11e9-9f68-b0c19e194119.png)
 
-<br> </br>
-![ezgif com-video-to-gif](https://user-images.githubusercontent.com/43203736/61530367-c35cf980-aa1b-11e9-9c30-9cf744b2b92f.gif)
 
 
 ### Wins and Blockers
